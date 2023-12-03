@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="ch">
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>图书信息查询</title>
     <style>
@@ -68,12 +68,12 @@
         <th>出版社</th>
         <th>作者</th>
     </tr>
-        <tr>
-            <td th:text="${book.id}"></td>
-            <td th:text="${book.bookName}"></td>
-            <td th:text="${book.press}"></td>
-            <td th:text="${book.author}"></td>
-        </tr>
+    <tr>
+        <td th:text="${book.id}"></td>
+        <td th:text="${book.bookName}"></td>
+        <td th:text="${book.press}"></td>
+        <td th:text="${book.author}"></td>
+    </tr>
 </table>
 </body>
 </html>
