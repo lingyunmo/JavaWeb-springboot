@@ -67,12 +67,17 @@
         <th>图书名称</th>
         <th>出版社</th>
         <th>作者</th>
+        <th>操作</th>
     </tr>
     <tr th:each="book : ${books}">
         <td th:text="${book.id}"></td>
         <td th:text="${book.bookName}"></td>
         <td th:text="${book.press}"></td>
         <td th:text="${book.author}"></td>
+        <td>
+            <a th:href="@{/myBook/deleteBook(id=${book.id})}">删除</a>
+            <a th:href="@{/myBook/toUpdateBook(id=${book.id})}">修改</a>
+        </td>
     </tr>
 </table>
 </body>
